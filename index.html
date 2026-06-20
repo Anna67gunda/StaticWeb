@@ -2,50 +2,122 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Welcome</title>
+    <title>Finance Hub</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background: #f4f4f4;
-            text-align: center;
-            padding-top: 80px;
-        }
-        .welcome-box {
-            background: white;
-            padding: 30px;
-            margin: auto;
-            width: 350px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        button {
-            margin-top: 15px;
-            padding: 10px 20px;
-            border: none;
-            background: #0078ff;
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(135deg, #0a1f44, #0e3a6f);
             color: white;
-            border-radius: 5px;
-            cursor: pointer;
         }
-        button:hover {
-            background: #005fcc;
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        p.subtitle {
+            font-size: 20px;
+            opacity: 0.85;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            backdrop-filter: blur(6px);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            background: rgba(255, 255, 255, 0.18);
+            transform: translateY(-3px);
+        }
+
+        .card h2 {
+            margin-top: 0;
+        }
+
+        .links a {
+            display: inline-block;
+            margin: 8px 10px;
+            padding: 12px 20px;
+            background: #00aaff;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .links a:hover {
+            background: #0088cc;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            opacity: 0.7;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
 
-    <div class="welcome-box">
-        <h1>Welcome to Our Website</h1>
-        <p>We're happy to have you here.</p>
-        <button onclick="sayHello()">Click to Say Hello</button>
-        <p id="message"></p>
+<header>
+    <h1>Welcome to Finance Hub</h1>
+    <p class="subtitle">Your gateway to global markets, economic news, and financial insights</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Latest Financial News</h2>
+        <p>Stay updated with real‑time market coverage and global economic developments.</p>
+        <div class="links">
+            <a href="https://www.ft.com" target="_blank">Financial Times</a>
+            <a href="https://www.bloomberg.com" target="_blank">Bloomberg</a>
+            <a href="https://finance.yahoo.com" target="_blank">Yahoo Finance</a>
+        </div>
     </div>
 
-    <script>
-        function sayHello() {
-            document.getElementById("message").innerText = "Enjoy your visit!";
-        }
-    </script>
+    <div class="card">
+        <h2>Official Market Data</h2>
+        <p>Access authoritative yield curves, policy updates, and macroeconomic indicators.</p>
+        <div class="links">
+            <a href="https://www.treasury.gov/resource-center/data-chart-center/interest-rates/Pages/default.aspx" target="_blank">U.S. Treasury</a>
+            <a href="https://www.bankofengland.co.uk/statistics/yield-curves" target="_blank">Bank of England</a>
+            <a href="https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/euro_area_yield_curves/html/index.en.html" target="_blank">ECB Yield Curve</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Market Tools & Analysis</h2>
+        <p>Explore charts, macro dashboards, and analytical resources.</p>
+        <div class="links">
+            <a href="https://www.tradingview.com/markets/" target="_blank">TradingView Markets</a>
+            <a href="https://www.investing.com" target="_blank">Investing.com</a>
+            <a href="https://www.marketwatch.com" target="_blank">MarketWatch</a>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    Finance Hub © 2026 — Curated links to trusted financial sources.
+</footer>
 
 </body>
 </html>
